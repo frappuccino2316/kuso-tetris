@@ -76,7 +76,7 @@ def clear(original_grid):
                 new_grid[row_index - 3][i] = ""
 
             # 横列の判定
-            elif cell == "" or i > len(original_grid[row_index]) - 4:
+            elif i > len(original_grid[row_index]) - 4:
                 break
             elif original_grid[row_index][i] == "K" and original_grid[row_index][i + 1] == "U" and original_grid[row_index][i + 2] == "S" and original_grid[row_index][i + 3] == "O":
                 new_grid[row_index][i] = ""
